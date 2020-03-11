@@ -1,0 +1,42 @@
+.review {
+    position: relative;
+    color: #fff;
+    filter: grayscale(100%);
+
+    &:hover {
+        .review__hover {
+        opacity: 1;
+        transform: scale(1);
+        }
+    }
+
+&__img-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+&__pic {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+&__username {
+    font-size: 14px;
+    font-family: "Gagalin";
+    color: rgb(255, 255, 255);
+    line-height: 2.008;
+    text-align: center;
+}
+
+&__content {
+    text-align: left;
+    font-size: 14px;
+    font-family: "Ubuntu";
+    color: rgb(255, 255, 255);
+    line-height: 1.714;
+}
+}
