@@ -571,7 +571,7 @@ button {
 }
 
 .hero {
-  background: url("src/img/cover.jpg") center center/cover no-repeat;
+  background: url("../../src/img/cover.jpg") center center/cover no-repeat;
   position: relative;
 }
 
@@ -694,7 +694,7 @@ button {
 }
 
 .best {
-  background: url("src/img/bg2.jpg") center center/cover no-repeat;
+  background: url("../../src/img/bg2.jpg") center center/cover no-repeat;
   position: relative;
 }
 
