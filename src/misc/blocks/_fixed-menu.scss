@@ -1,0 +1,27 @@
+.rmenu {
+    position: fixed;
+    top: 15%;
+    right: 50px;
+}
+
+.fixed-menu__item {
+    border: 1px solid transparent;
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    position: relative;
+    margin-bottom: 5px;
+    &--active {
+        border-color: #fff;
+    }
+}
+
+.fixed-menu__dot {
+    display: inline-block;
+    background-color: white;
+    width: 0.5em;
+    height: 0.6em;
+    vertical-align: middle;
+    text-decoration: none;
+    border-radius: 50%;
+}
