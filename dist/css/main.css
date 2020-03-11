@@ -694,7 +694,7 @@ button {
 }
 
 .best {
-  background: url("./src/img/bg2.jpg") center center/cover no-repeat;
+  background: url("src/img/bg2.jpg") center center/cover no-repeat;
   position: relative;
 }
 
@@ -812,3 +812,4 @@ button {
   color: white;
   line-height: 1.714;
 }
+/*# sourceMappingURL=main.css.map */
