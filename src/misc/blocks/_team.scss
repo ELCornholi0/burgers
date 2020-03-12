@@ -1,0 +1,82 @@
+
+.team {
+    background: url(/src/img/team/team-bg.jpg) center center / cover no-repeat;
+    background-size: cover;
+    height: 100vh;
+    min-height: 650px;
+    position: relative;
+    &__block {
+        position: absolute;
+        width: 50%;
+        right: 0;
+    }
+    &__content {
+        height: 100vh;
+        opacity: 0.929;
+        background: url(/src/img/team/teamcontent.jpg);
+        padding: 100px 90px 0px;
+    }
+    &__title {
+        font-size: 71.713px;
+        font-family: "Gagalin";
+        color: rgb(249, 180, 59);
+        line-height: 0.889;
+    }
+    &__accordeon {
+        margin-top: 50px;
+    }
+}
+
+.teammate {
+    margin-bottom: 10%;
+    flex-direction: column;
+    &:active {
+        .teammate__content {
+            display: flex;
+            height: 100%;
+        }
+        .teammate__name {
+            color: rgb(249, 180, 59);
+        }
+    }
+    &__content {
+        display: flex;
+        height: 0;
+        overflow: hidden;
+    }
+    &__name {
+        font-size: 14px;
+        font-family: "Gagalin";
+        color: rgb(255, 255, 255);
+        line-height: 2.008;
+    }
+    &__ava {
+        width: 100px;
+        height: 100px;
+        position: relative;
+        overflow: hidden;
+        border-radius: 50%;
+    }
+    &__img {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+    }
+    &__profession {
+        font-size: 14px;
+        font-family: "Ubuntu";
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        line-height: 1.714;
+    }
+    &__text {
+        font-size: 14px;
+        font-family: "Ubuntu";
+        color: rgb(255, 255, 255);
+        line-height: 1.714;
+    }
+}
+

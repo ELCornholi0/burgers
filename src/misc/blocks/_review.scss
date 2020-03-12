@@ -5,6 +5,8 @@
 
     &:hover {
         .review__hover {
+        margin-top: 15%;
+        margin-left: 5%;
         opacity: 1;
         transform: scale(1);
         }
@@ -20,6 +22,7 @@
 
 &__pic {
     display: block;
+    height: 100%;
     width: 100%;
     object-fit: cover;
 }
@@ -29,10 +32,12 @@
     font-family: "Gagalin";
     color: rgb(255, 255, 255);
     line-height: 2.008;
-    text-align: center;
+    text-align: left;
 }
 
 &__content {
+    margin-top: 15%;
+    margin-bottom: 15%;
     text-align: left;
     font-size: 14px;
     font-family: "Ubuntu";
@@ -40,3 +45,5 @@
     line-height: 1.714;
 }
 }
+
+
