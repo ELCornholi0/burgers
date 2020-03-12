@@ -708,10 +708,11 @@ button {
   display: inline-block;
   padding: 10px 15px;
   margin-left: 15px;
+  color: white;
 }
 
 .btn:hover {
-  color: white;
+  background: #c1401e;
 }
 
 .scroll-down {
@@ -806,6 +807,8 @@ button {
 }
 
 .review:hover .review__hover {
+  margin-top: 15%;
+  margin-left: 5%;
   opacity: 1;
   -webkit-transform: scale(1);
           transform: scale(1);
@@ -821,6 +824,7 @@ button {
 
 .review__pic {
   display: block;
+  height: 100%;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -831,11 +835,112 @@ button {
   font-family: "Gagalin";
   color: white;
   line-height: 2.008;
-  text-align: center;
+  text-align: left;
 }
 
 .review__content {
+  margin-top: 15%;
+  margin-bottom: 15%;
   text-align: left;
+  font-size: 14px;
+  font-family: "Ubuntu";
+  color: white;
+  line-height: 1.714;
+}
+
+.team {
+  background: url(/src/img/team/team-bg.jpg) center center/cover no-repeat;
+  background-size: cover;
+  height: 100vh;
+  min-height: 650px;
+  position: relative;
+}
+
+.team__block {
+  position: absolute;
+  width: 50%;
+  right: 0;
+}
+
+.team__content {
+  height: 100vh;
+  opacity: 0.929;
+  background: url(/src/img/team/teamcontent.jpg);
+  padding: 100px 90px 0px;
+}
+
+.team__title {
+  font-size: 71.713px;
+  font-family: "Gagalin";
+  color: #f9b43b;
+  line-height: 0.889;
+}
+
+.team__accordeon {
+  margin-top: 50px;
+}
+
+.teammate {
+  margin-bottom: 10%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.teammate:active .teammate__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+}
+
+.teammate:active .teammate__name {
+  color: #f9b43b;
+}
+
+.teammate__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 0;
+  overflow: hidden;
+}
+
+.teammate__name {
+  font-size: 14px;
+  font-family: "Gagalin";
+  color: white;
+  line-height: 2.008;
+}
+
+.teammate__ava {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.teammate__img {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+
+.teammate__profession {
+  font-size: 14px;
+  font-family: "Ubuntu";
+  color: white;
+  font-weight: bold;
+  line-height: 1.714;
+}
+
+.teammate__text {
   font-size: 14px;
   font-family: "Ubuntu";
   color: white;
