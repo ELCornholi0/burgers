@@ -21,7 +21,7 @@
         &:active {
             width: 100%;
             .menu__discription {
-                background: url('/src/img/menu/opacity-bg.jpg');
+                background: url('../../src/img/menu/opacity-bg.jpg');
                 opacity: 0.929;
                 display: flex;
                 overflow: visible;
@@ -36,16 +36,16 @@
     }
 
     &__formeat {
-        background: url('/src/img/menu/formeat-bg.jpg') center center / cover no-repeat;
+        background: url('../../src/img/menu/formeat-bg.jpg') center center / cover no-repeat;
     }
 
     &__vegan {
-        background: url('/src/img/menu/vegan-bg.jpg') center center / cover no-repeat;
+        background: url('../../src/img/menu/vegan-bg.jpg') center center / cover no-repeat;
         background-size: cover;
     }
 
     &__natural {
-        background: url("/src/img/menu/natural-bg.jpg") center center / cover no-repeat;
+        background: url("../../src/img/menu/natural-bg.jpg") center center / cover no-repeat;
         background-size: cover;
     }
 
