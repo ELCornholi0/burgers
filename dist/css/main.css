@@ -1241,15 +1241,18 @@ button {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    text-align: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
 }
 
 .delivery__block {
   width: 50%;
+}
+
+@media screen and (max-width: 768px) {
+  .delivery__block {
+    padding: 0 17%;
+    width: 100%;
+  }
 }
 
 .delivery__row {
