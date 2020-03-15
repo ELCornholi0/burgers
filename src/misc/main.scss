@@ -6,9 +6,11 @@ $red: #e35028;
 $z-fixed-menu: 100;
 
 @import "_normolize.scss";
+@import "_media.scss";
 
 @import "_fonts.scss";
 @import "_layout.scss";
+@import "blocks/_hamburger.scss";
 
 @import "blocks/_fixed-menu.scss";
 @import "blocks/_section.scss";
@@ -18,7 +20,8 @@ $z-fixed-menu: 100;
 @import "blocks/_btn.scss";
 @import "blocks/_scroll-down.scss";
 @import "blocks/_best.scss";
-@import "blocks/_reviews.scss";
 @import "blocks/_review.scss";
-@import "blocks/_menu.scss";
 @import "blocks/_team.scss";
+@import "blocks/_menu.scss";
+@import "blocks/_delivery.scss";
+@import "blocks/_footer.scss";
