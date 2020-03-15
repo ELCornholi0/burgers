@@ -1150,7 +1150,7 @@ button {
 }
 
 .menu__item:active .menu__discription {
-  background: url("/src/img/menu/opacity-bg.jpg");
+  background: url("../../src/img/menu/opacity-bg.jpg");
   opacity: 0.929;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1166,16 +1166,16 @@ button {
 }
 
 .menu__formeat {
-  background: url("/src/img/menu/formeat-bg.jpg") center center/cover no-repeat;
+  background: url("../../src/img/menu/formeat-bg.jpg") center center/cover no-repeat;
 }
 
 .menu__vegan {
-  background: url("/src/img/menu/vegan-bg.jpg") center center/cover no-repeat;
+  background: url("../../src/img/menu/vegan-bg.jpg") center center/cover no-repeat;
   background-size: cover;
 }
 
 .menu__natural {
-  background: url("/src/img/menu/natural-bg.jpg") center center/cover no-repeat;
+  background: url("../../src/img/menu/natural-bg.jpg") center center/cover no-repeat;
   background-size: cover;
 }
 
