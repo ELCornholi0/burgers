@@ -1,82 +1,114 @@
 
 .team {
     background: url('../../src/img/team/team-bg.jpg') center center / cover no-repeat;
-    background-size: cover;
     height: 100vh;
-    min-height: 650px;
+    min-height: 40.625rem;
     position: relative;
     &__block {
         position: absolute;
         width: 50%;
-        right: 0;
+        right: 0;        
+        @include tablets {
+            width: 100%;
+        }
     }
     &__content {
         height: 100vh;
         opacity: 0.929;
         background: url('../../src/img/team/teamcontent.jpg');
-        padding: 100px 90px 0px;
+        padding: 8.125rem 8.125rem 0rem;
+        @include tablets {
+            text-align: center;
+        }
     }
     &__title {
-        font-size: 71.713px;
+        font-size: 4.4821rem;
         font-family: "Gagalin";
         color: rgb(249, 180, 59);
         line-height: 0.889;
     }
     &__accordeon {
-        margin-top: 50px;
+        margin-top: 3.125rem;
     }
 }
 
 .teammate {
     margin-bottom: 10%;
     flex-direction: column;
-    &:active {
-        .teammate__content {
-            display: flex;
-            height: 100%;
-        }
-        .teammate__name {
-            color: rgb(249, 180, 59);
-        }
-    }
+//    &:active {
+//        .teammate__content {
+//            display: flex;
+//            height: 100%;
+//        }
+//        .teammate__name {
+//            color: rgb(249, 180, 59);
+//        }
+//    }
     &__content {
         display: flex;
         height: 0;
-        overflow: hidden;
+        overflow: hidden;        
+        @include tablets {
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+        }
     }
     &__name {
-        font-size: 14px;
+        font-size: 0.875rem;
         font-family: "Gagalin";
         color: rgb(255, 255, 255);
         line-height: 2.008;
+        &::before{
+            content: "";
+            border-bottom: 0.375rem solid transparent;
+            border-top: 0.375rem solid #f9b43b;
+            border-right: 0.3125rem solid transparent;
+            border-left: 0.3125rem solid transparent;
+            margin-right: 0.625rem;
+            margin-top: 0.1875rem;
+        }
     }
     &__ava {
-        width: 100px;
-        height: 100px;
+        width: 6.25rem;
+        height: 6.25rem;
         position: relative;
         overflow: hidden;
         border-radius: 50%;
+        margin-left: 1.5625rem;
     }
     &__img {
-        width: 100px;
-        height: 100px;
+        width: 6.25rem;
+        height: 6.25rem;
         position: absolute;
         transform: translate(-50%, -50%);
         top: 50%;
         left: 50%;
     }
+    &__discription {
+        margin-left: 1.25rem;
+        width: 70%;
+    }
     &__profession {
-        font-size: 14px;
+        font-size: 0.875rem;
         font-family: "Ubuntu";
         color: rgb(255, 255, 255);
         font-weight: bold;
         line-height: 1.714;
     }
     &__text {
-        font-size: 14px;
+        font-size: 0.875rem;
         font-family: "Ubuntu";
         color: rgb(255, 255, 255);
         line-height: 1.714;
     }
 }
 
+.active {
+    .teammate__content {
+        height: 100%;
+    }
+    .teammate__name::before{
+        transform: rotate(180deg);
+    }
+}

@@ -1,0 +1,79 @@
+.menu {
+    background: url('/src/img/menu/menu-bg.jpg') center center / cover no-repeat;
+    position: relative;            
+    height: 100vh;
+
+    &__block { 
+        position: absolute;       
+        width: 70%;
+        right: 0;
+    }
+
+    &__accordeon {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &__item {
+        display: flex;
+        width: 5rem;
+        height: 100vh;
+        &:active {
+            width: 100%;
+            .menu__discription {
+                background: url('/src/img/menu/opacity-bg.jpg');
+                opacity: 0.929;
+                display: flex;
+                overflow: visible;
+                width: 100%;
+                color: white;
+                padding: 10%;
+            }        
+            .menu__name {
+                color: rgb(249, 180, 59);;
+            }
+        }
+    }
+
+    &__formeat {
+        background: url('/src/img/menu/formeat-bg.jpg') center center / cover no-repeat;
+    }
+
+    &__vegan {
+        background: url('/src/img/menu/vegan-bg.jpg') center center / cover no-repeat;
+        background-size: cover;
+    }
+
+    &__natural {
+        background: url("/src/img/menu/natural-bg.jpg") center center / cover no-repeat;
+        background-size: cover;
+    }
+
+    &__title {
+        position: absolute;
+        top: 7.0625rem;
+        left: 5.9375rem;
+        font-size: 4.4821rem;
+        font-family: "Gagalin";
+        color: rgb(255, 255, 255);
+        line-height: 0.889;
+    }
+    &__name {
+        font-size: 2.5rem;
+        font-family: "Gagalin";
+        color: rgb(255, 255, 255);
+        line-height: 1.601;
+        writing-mode: vertical-lr;
+        transform: rotate(180deg);
+        margin-bottom: 2.5rem;
+    }
+
+    &__discription {
+        background: none;
+        opacity: none;
+        overflow: hidden;
+        width: 0%;
+
+    }
+}
+

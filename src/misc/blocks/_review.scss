@@ -1,3 +1,26 @@
+
+.reviews {
+    background: black;
+    height: 100vh;
+    min-height: 40.625rem;
+
+&__list {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+&__item {
+    width: 25%;
+    height: 50%;
+    @include tablets {
+        width: 50%;
+        height: 50%;
+    }
+}
+}
+
+
 .review {
     position: relative;
     color: #fff;
@@ -28,7 +51,7 @@
 }
 
 &__username {
-    font-size: 14px;
+    font-size: 0.875rem;
     font-family: "Gagalin";
     color: rgb(255, 255, 255);
     line-height: 2.008;
@@ -39,7 +62,7 @@
     margin-top: 15%;
     margin-bottom: 15%;
     text-align: left;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-family: "Ubuntu";
     color: rgb(255, 255, 255);
     line-height: 1.714;

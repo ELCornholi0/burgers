@@ -1,0 +1,58 @@
+$current: #5b5b5b;
+$active: #fff;
+
+.location {
+    background: url(/src/img/footer/map.jpg) center center / cover no-repeat;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    background-color: black;
+    height: 3.75rem;
+
+    &__content {
+        display: flex;
+    }
+    
+}
+.contacts {
+    background: none;
+    width: 50%;
+    margin-top: 0.625rem;
+    margin-left: 5rem;
+    &__adress {
+        color:  #fff;
+    }
+    &__phone {
+        display: flex;
+        align-items: center;
+    }
+    &__number {
+        color: #e45028;
+    }
+}
+
+.phone-icon {
+    width: 0.9375rem;
+    height: 0.9375rem;
+    margin-right: 0.9375rem;
+}
+
+.socials {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 5.625rem;
+}
+
+.vk-icon, .fb-icon, .inst-icon, .tw-icon {
+    width: 1.25rem;
+    height: 1.25rem;
+    fill: $current;
+    margin-right: 1.25rem;
+    &:hover {
+        fill: $active;
+    }
+}

@@ -8,17 +8,33 @@
   display: flex;
   align-items: center;
   flex: .8;
+  @include tablets {
+    flex-direction: column;
+  }
+  
 }
 &__desc {
-  padding-top: 85px;
-  margin-left: 20px;
+  padding-top: 5.3125rem;
+  margin-left: 1.25rem;
   font-family: "Gagalin";
   color: rgb(249, 180, 59);
-  font-size: 72px;
+  font-size: 4.5rem;
+  @include tablets {
+    text-align: center;
+}
 }
 &__subtitle {
-  font-size: 56px;
+  font-size: 3.5rem;
   color: #fff;
   line-height: 1;
 }
+}
+
+.scroll-down-btn {
+  margin-bottom: 2.1875rem;
+}
+
+.arrow-icon {
+  width: 1.875rem;
+  height: 0.9375rem;
 }

@@ -2,13 +2,16 @@
     background: $red;
     text-decoration: none;
     text-transform: uppercase;
-    border-radius: 5px;
-    font-size: 13px;
+    border-radius: 0.3125rem;
+    font-size: 0.8125rem;
     display: inline-block;
-    padding: 10px 15px;
-    margin-left: 15px;
+    padding: 0.625rem 0.9375rem;
+    margin-left: 0.9375rem;
     color: white;
 &:hover {
     background: #c1401e;
 }
-  }
+&__two {
+    background: none;
+}
+}

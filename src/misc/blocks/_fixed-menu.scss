@@ -1,27 +1,32 @@
-.rmenu {
+.fixedmenu {
+
+&__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     position: fixed;
-    top: 15%;
-    right: 50px;
+    right: 2%;
+    top: 30%;
+    z-index: 20;
+    transform: translateY(-50%);
 }
 
-.fixed-menu__item {
-    border: 1px solid transparent;
-    width: 16px;
-    height: 16px;
-    border-radius: 8px;
-    position: relative;
-    margin-bottom: 5px;
-    &--active {
-        border-color: #fff;
+&__item {
+    margin: 0.8125rem 0;
+    border: 0.0625rem solid transparent;
+
+    &--current {
+    padding: 0.3125rem;
+    border-radius: 50%;
+    border: 0.0625rem solid white;
     }
 }
 
-.fixed-menu__dot {
-    display: inline-block;
-    background-color: white;
-    width: 0.5em;
-    height: 0.6em;
-    vertical-align: middle;
-    text-decoration: none;
+    &__link {
+    display: block;
+    width: 0.375rem;
+    height: 0.375rem;
     border-radius: 50%;
+    background-color: white;
+    }
 }
